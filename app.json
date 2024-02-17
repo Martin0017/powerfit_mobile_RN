@@ -18,11 +18,19 @@
       "supportsTablet": true
     },
     "android": {
+      "useNextNetworkRequestEvent": true,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "network": {
+        "content": "network"
+      },
+      "permissions" : ["android.permission.RECORD_AUDIO"]
     },
+    "modules": [
+      "expo-network"
+    ],
     "web": {
       "favicon": "./assets/favicon.png"
     }
